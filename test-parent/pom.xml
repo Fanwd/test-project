@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>1.5.2.RELEASE</version>
+  </parent>
+  <groupId>com.test</groupId>
+  <artifactId>test-parent</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <name>test-parent</name>
+  <description>测试项目</description>
+  <modules>
+    <module>test-common</module>
+    <module>test-provider</module>
+    <module>test-consumer</module>
+  </modules>
+  <properties>
+  	<java_source_version>1.8</java_source_version>
+  	<java_target_version>1.8</java_target_version>
+  </properties>
+  <build>
+  	<plugins>
+  		<plugin>
+  			<groupId>org.apache.maven.plugins</groupId>
+  			<artifactId>maven-compiler-plugin</artifactId>
+  			<configuration>
+  				<source>${java_source_version}</source>
+  				<target>${java_target_version}</target>
+  			</configuration>
+  		</plugin>
+  	</plugins>
+  </build>
+</project>
