@@ -1,0 +1,11 @@
+[2017-03-17 09:17:14.264] [ INFO] [main] com.test.provider.Application[48] - Starting Application on DESKTOP-R1D2FVS with PID 3568 (E:\pragma\GitHub\test-project\test-parent\test-provider\target\classes started by fanweidong in E:\pragma\GitHub\test-project\test-parent\test-provider)
+[2017-03-17 09:17:14.295] [DEBUG] [main] com.test.provider.Application[51] - Running with Spring Boot v1.4.0.RELEASE, Spring v4.3.2.RELEASE
+[2017-03-17 09:17:14.327] [ INFO] [main] com.test.provider.Application[659] - No active profile set, falling back to default profiles: default
+[2017-03-17 09:17:14.764] [DEBUG] [background-preinit] org.jboss.logging[160] - Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+[2017-03-17 09:17:16.389] [ INFO] [main] o.a.catalina.core.StandardService[179] - Starting service Tomcat
+[2017-03-17 09:17:16.396] [ INFO] [main] o.a.catalina.core.StandardEngine[179] - Starting Servlet Engine: Apache Tomcat/8.5.4
+[2017-03-17 09:17:16.552] [ INFO] [localhost-startStop-1] o.a.c.c.C.[.[.[/test-provider][179] - Initializing Spring embedded WebApplicationContext
+[2017-03-17 09:17:17.318] [ INFO] [main] o.a.coyote.http11.Http11NioProtocol[179] - Initializing ProtocolHandler ["http-nio-127.0.0.1-8080"]
+[2017-03-17 09:17:17.334] [ INFO] [main] o.a.coyote.http11.Http11NioProtocol[179] - Starting ProtocolHandler [http-nio-127.0.0.1-8080]
+[2017-03-17 09:17:17.349] [ INFO] [main] o.a.tomcat.util.net.NioSelectorPool[179] - Using a shared selector for servlet write/read
+[2017-03-17 09:17:17.381] [ INFO] [main] com.test.provider.Application[57] - Started Application in 3.501 seconds (JVM running for 4.07)

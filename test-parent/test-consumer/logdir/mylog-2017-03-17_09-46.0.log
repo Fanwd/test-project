@@ -1,0 +1,84 @@
+[2017-03-17 09:46:43.107] [ INFO] [main] com.test.consumer.Application[48] - Starting Application on DESKTOP-R1D2FVS with PID 9628 (E:\pragma\GitHub\test-project\test-parent\test-consumer\target\classes started by fanweidong in E:\pragma\GitHub\test-project\test-parent\test-consumer)
+[2017-03-17 09:46:43.123] [DEBUG] [main] com.test.consumer.Application[51] - Running with Spring Boot v1.4.0.RELEASE, Spring v4.3.2.RELEASE
+[2017-03-17 09:46:43.123] [ INFO] [main] com.test.consumer.Application[659] - No active profile set, falling back to default profiles: default
+[2017-03-17 09:46:43.544] [DEBUG] [background-preinit] org.jboss.logging[160] - Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+[2017-03-17 09:46:45.500] [ INFO] [main] o.a.catalina.core.StandardService[179] - Starting service Tomcat
+[2017-03-17 09:46:45.515] [ INFO] [main] o.a.catalina.core.StandardEngine[179] - Starting Servlet Engine: Apache Tomcat/8.5.4
+[2017-03-17 09:46:45.624] [ INFO] [localhost-startStop-1] o.a.c.c.C.[.[.[/test-consumer][179] - Initializing Spring embedded WebApplicationContext
+[2017-03-17 09:46:46.375] [ INFO] [main] o.a.coyote.http11.Http11NioProtocol[179] - Initializing ProtocolHandler ["http-nio-127.0.0.1-8080"]
+[2017-03-17 09:46:46.390] [ INFO] [main] o.a.coyote.http11.Http11NioProtocol[179] - Starting ProtocolHandler [http-nio-127.0.0.1-8080]
+[2017-03-17 09:46:46.406] [ERROR] [main] o.a.coyote.http11.Http11NioProtocol[181] - Failed to start end point associated with ProtocolHandler [http-nio-127.0.0.1-8080]
+java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:229)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:874)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:573)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1035)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:152)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:234)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:179)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:544)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:369)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:313)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1185)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1174)
+	at com.test.consumer.Application.main(Application.java:10)
+[2017-03-17 09:46:46.406] [ERROR] [main] o.a.catalina.core.StandardService[181] - Failed to start connector [Connector[HTTP/1.1-8080]]
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-8080]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:158)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:234)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:179)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:544)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:369)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:313)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1185)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1174)
+	at com.test.consumer.Application.main(Application.java:10)
+Caused by: org.apache.catalina.LifecycleException: service.getName(): "Tomcat";  Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1042)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:152)
+	... 13 common frames omitted
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:229)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:874)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:573)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1035)
+	... 14 common frames omitted
+[2017-03-17 09:46:46.406] [ INFO] [main] o.a.coyote.http11.Http11NioProtocol[179] - Pausing ProtocolHandler ["http-nio-127.0.0.1-8080"]
+[2017-03-17 09:46:46.406] [ INFO] [main] o.a.catalina.core.StandardService[179] - Stopping service Tomcat
+[2017-03-17 09:46:46.468] [ INFO] [main] o.apache.catalina.util.LifecycleBase[179] - The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+[2017-03-17 09:46:46.468] [ INFO] [main] o.a.coyote.http11.Http11NioProtocol[179] - Stopping ProtocolHandler ["http-nio-127.0.0.1-8080"]
+[2017-03-17 09:46:46.468] [ INFO] [main] o.a.coyote.http11.Http11NioProtocol[179] - Destroying ProtocolHandler ["http-nio-127.0.0.1-8080"]
+[2017-03-17 09:46:46.484] [ERROR] [main] o.s.b.d.LoggingFailureAnalysisReporter[42] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Embedded servlet container failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
