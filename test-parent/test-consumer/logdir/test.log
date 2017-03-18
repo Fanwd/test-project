@@ -1,12 +1,6 @@
-[2017-03-17 09:47:25.515] [ INFO] [main] com.test.consumer.Application[48] - Starting Application on DESKTOP-R1D2FVS with PID 16092 (E:\pragma\GitHub\test-project\test-parent\test-consumer\target\classes started by fanweidong in E:\pragma\GitHub\test-project\test-parent\test-consumer)
-[2017-03-17 09:47:25.515] [DEBUG] [main] com.test.consumer.Application[51] - Running with Spring Boot v1.4.0.RELEASE, Spring v4.3.2.RELEASE
-[2017-03-17 09:47:25.515] [ INFO] [main] com.test.consumer.Application[659] - No active profile set, falling back to default profiles: default
-[2017-03-17 09:47:25.968] [DEBUG] [background-preinit] org.jboss.logging[160] - Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
-[2017-03-17 09:47:27.875] [ INFO] [main] o.a.catalina.core.StandardService[179] - Starting service Tomcat
-[2017-03-17 09:47:27.886] [ INFO] [main] o.a.catalina.core.StandardEngine[179] - Starting Servlet Engine: Apache Tomcat/8.5.4
-[2017-03-17 09:47:27.980] [ INFO] [localhost-startStop-1] o.a.c.c.C.[.[.[/test-consumer][179] - Initializing Spring embedded WebApplicationContext
-[2017-03-17 09:47:28.808] [ INFO] [main] o.a.coyote.http11.Http11NioProtocol[179] - Initializing ProtocolHandler ["http-nio-127.0.0.1-8081"]
-[2017-03-17 09:47:28.824] [ INFO] [main] o.a.coyote.http11.Http11NioProtocol[179] - Starting ProtocolHandler [http-nio-127.0.0.1-8081]
-[2017-03-17 09:47:28.839] [ INFO] [main] o.a.tomcat.util.net.NioSelectorPool[179] - Using a shared selector for servlet write/read
-[2017-03-17 09:47:28.870] [ INFO] [main] com.test.consumer.Application[57] - Started Application in 3.781 seconds (JVM running for 4.877)
-[2017-03-17 09:47:55.662] [ INFO] [http-nio-127.0.0.1-8081-exec-1] o.a.c.c.C.[.[.[/test-consumer][179] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[2017-03-18 22:27:01.016] [DEBUG] [main-SendThread(192.168.1.104:2181)] org.apache.zookeeper.ClientCnxn[758] - Got ping response for sessionid: 0x15ae1b1454c0005 after 7ms
+[2017-03-18 22:27:11.064] [DEBUG] [main-SendThread(192.168.1.104:2181)] org.apache.zookeeper.ClientCnxn[758] - Got ping response for sessionid: 0x15ae1b1454c0005 after 50ms
+[2017-03-18 22:27:21.047] [DEBUG] [main-SendThread(192.168.1.104:2181)] org.apache.zookeeper.ClientCnxn[758] - Got ping response for sessionid: 0x15ae1b1454c0005 after 32ms
+[2017-03-18 22:27:31.049] [DEBUG] [main-SendThread(192.168.1.104:2181)] org.apache.zookeeper.ClientCnxn[758] - Got ping response for sessionid: 0x15ae1b1454c0005 after 32ms
+[2017-03-18 22:27:41.053] [DEBUG] [main-SendThread(192.168.1.104:2181)] org.apache.zookeeper.ClientCnxn[758] - Got ping response for sessionid: 0x15ae1b1454c0005 after 34ms
+[2017-03-18 22:27:51.032] [DEBUG] [main-SendThread(192.168.1.104:2181)] org.apache.zookeeper.ClientCnxn[758] - Got ping response for sessionid: 0x15ae1b1454c0005 after 8ms
