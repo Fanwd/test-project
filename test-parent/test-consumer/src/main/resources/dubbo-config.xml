@@ -9,14 +9,11 @@
     <!-- 消费方应用名，用于计算依赖关系，不是匹配条件，不要与提供方一样 -->
     <dubbo:application name="test"  />
  
-	<dubbo:registry protocol="zookeeper" address="127.0.0.1:2181"/>
+	<dubbo:registry protocol="zookeeper" address="192.168.1.104:2181"/>
     <!-- 生成远程服务代理，可以和本地bean一样使用demoService -->   
-    <dubbo:protocol name="dubbo" port="${aries.protocol.aries.port}" />
+<!--     <dubbo:protocol name="dubbo" port="${aries.protocol.aries.port}" /> -->
     <!--消费方的缺省值 -->
-    <dubbo:consumer loadbalance="leastactive" check="false" init="false"  retries="0"/>
+<!--     <dubbo:consumer loadbalance="leastactive" check="false" init="false"  retries="0"/> -->
     
-    <!--<dubbo:provider version="80089"
-		protocol="dubbo" loadbalance="leastactive" cluster="failfast" timeout="60000"
-		layer="service" />-->	
- 	<import resource="classpath:rmi/msf-dubbo-consumer.xml" /> 
+ 	<dubbo:reference id="demoService" interface="com.test.common.DemoService"></dubbo:reference>
 </beans>

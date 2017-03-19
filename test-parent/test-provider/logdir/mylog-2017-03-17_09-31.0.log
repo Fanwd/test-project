@@ -1,6 +1,0 @@
-[2017-03-17 09:31:01.453] [DEBUG] [main-SendThread(127.0.0.1:2181)] org.apache.zookeeper.ClientCnxn[758] - Got ping response for sessionid: 0x15ad9d882140000 after 2ms
-[2017-03-17 09:31:11.470] [DEBUG] [main-SendThread(127.0.0.1:2181)] org.apache.zookeeper.ClientCnxn[758] - Got ping response for sessionid: 0x15ad9d882140000 after 1ms
-[2017-03-17 09:31:21.475] [DEBUG] [main-SendThread(127.0.0.1:2181)] org.apache.zookeeper.ClientCnxn[758] - Got ping response for sessionid: 0x15ad9d882140000 after 2ms
-[2017-03-17 09:31:31.485] [DEBUG] [main-SendThread(127.0.0.1:2181)] org.apache.zookeeper.ClientCnxn[758] - Got ping response for sessionid: 0x15ad9d882140000 after 2ms
-[2017-03-17 09:31:41.491] [DEBUG] [main-SendThread(127.0.0.1:2181)] org.apache.zookeeper.ClientCnxn[758] - Got ping response for sessionid: 0x15ad9d882140000 after 1ms
-[2017-03-17 09:31:51.505] [DEBUG] [main-SendThread(127.0.0.1:2181)] org.apache.zookeeper.ClientCnxn[758] - Got ping response for sessionid: 0x15ad9d882140000 after 1ms
